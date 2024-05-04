@@ -1,0 +1,13 @@
+<section class="post-list" test="test">
+  <% console.log(page) %>
+  <% notes = page.content.split("<p>===</p>") %>
+  <% console.log(notes) %>
+  <% notes.forEach(function(text){ %>
+      <% time = text.split("</h2>")[0].split("a>")[1] %>
+      <% console.log(time) %>
+      <% text = text.split("</h2>")[1] %>
+      <div class='post-wrapper'>
+        <%- partial('notepost', {post: {title: "test", content: text, time: time}}) %>
+      </div>
+  <% }) %>
+</section>
