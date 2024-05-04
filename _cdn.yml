@@ -107,13 +107,13 @@ jquery:
   static: true
   cdnjs: true
 fontawesome:
-  name: "@fortawesome/fontawesome-free"
-  cdnjs_name: font-awesome
-  file: css/all.min.css
+  name: "fontawesome"
+  file: fa/all.min.css
   version: 6.1.1
+  local: true
   npm: true
-  static: true
-  cdnjs: true
+  static: false
+  cdnjs: false
 katex_js:
   name: katex
   cdnjs_name: KaTeX
