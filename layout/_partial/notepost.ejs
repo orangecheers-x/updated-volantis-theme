@@ -41,6 +41,11 @@
         <meta itemprop="image" content="<%- theme.structured_data.data.logo.path %>">
       </span>
     <% } %>
+    <% if (post.title) { %>
+      <h2 class="article-title" itemprop="name headline">
+        <%- post.title -%>
+      </h2>
+    <% } %>
     <div class='md article-desc' itemprop="articleBody">
       <%- post.content %>
     </div>
